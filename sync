@@ -1,0 +1,20 @@
+function print {
+	printf "\e[7m%-80s\e[0m\n" "$@"
+}
+
+shopt -s extglob
+
+print "Syncing Assets"
+rsync -avz ../catspace/Assets ./
+
+print "Syncing ProjectSettings"
+rsync -avz ../catspace/ProjectSettings ./
+
+print "Syncing Packages"
+rsync -avz ../catspace/Packages ./
+
+print "Syncing Library"
+if [ ! -d Library ]; then
+	mkdir Library
+fi
+rsync -avz ../catspace/Library/!(*Cache*|metadata|*.log|Collab|*Assemblies) ./Library/

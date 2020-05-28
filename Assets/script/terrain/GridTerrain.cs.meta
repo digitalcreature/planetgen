@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 7791b93952eea3748be1131bb2bb7775
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - terrainMaterial: {instanceID: 0}
+  - baseMesh: {instanceID: 0}
+  - fragmentPrefab: {fileID: 114122704813742492, guid: 6447e23b842477c4392cc2757a71945d,
+      type: 2}
+  - terrainSectionPrefab: {fileID: 23335525815336824, guid: 9287d002014464a43849847516ff83a1,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
